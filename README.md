@@ -1,4 +1,4 @@
-# 🌍 Text Translation and Sentiment Analysis using Transformers
+# Text Translation and Sentiment Analysis using Transformers
 
 A comprehensive NLP project that translates movie reviews from multiple languages and performs sentiment analysis using state-of-the-art Transformer models from HuggingFace.
 
@@ -6,7 +6,7 @@ A comprehensive NLP project that translates movie reviews from multiple language
 [![Transformers](https://img.shields.io/badge/🤗%20Transformers-4.35%2B-yellow.svg)](https://huggingface.co/docs/transformers/index)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## 📋 Project Overview
+## Project Overview
 
 This project analyzes the sentiment of **30 movie reviews** in three different languages:
 - 🇬🇧 **English** (10 movies)
@@ -18,7 +18,7 @@ The pipeline performs:
 2. **Neural Machine Translation** - Translates French and Spanish reviews to English
 3. **Sentiment Analysis** - Classifies reviews as Positive or Negative
 
-## 🎯 Key Features
+## Key Features
 
 - ✅ **Multi-language Support** - Processes English, French, and Spanish text
 - ✅ **State-of-the-art Models** - Uses HuggingFace's pre-trained Transformers
@@ -26,7 +26,7 @@ The pipeline performs:
 - ✅ **Comprehensive Analysis** - Includes both reviews and synopses
 - ✅ **Preserves Metadata** - Maintains original language information
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Technology | Purpose |
 |------------|---------|
@@ -36,7 +36,7 @@ The pipeline performs:
 | **Pandas** | Data manipulation and analysis |
 | **Jupyter Notebook** | Interactive development environment |
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -76,7 +76,7 @@ Text-Translation-using-Transformers/
 └── README.md                    # This file
 ```
 
-## 📊 Models Used
+## Models Used
 
 ### Translation Models (MarianMT)
 - **French → English**: `Helsinki-NLP/opus-mt-fr-en`
@@ -87,7 +87,7 @@ Text-Translation-using-Transformers/
   - Fine-tuned on Stanford Sentiment Treebank (SST-2)
   - Binary classification: Positive/Negative
 
-## 💡 How It Works
+## How It Works
 
 ### 1. Data Preprocessing
 ```python
@@ -111,7 +111,7 @@ def analyze_sentiment(text, classifier):
     # Returns: "Positive" or "Negative"
 ```
 
-## 📈 Output Format
+## Output Format
 
 The final CSV file contains:
 
@@ -124,7 +124,7 @@ The final CSV file contains:
 | **Original Language** | Source language (`en`/`fr`/`sp`) |
 | **Sentiment** | Classification result (`Positive`/`Negative`) |
 
-## 🔍 Example Results
+## Example Results
 
 | Title | Original Language | Sentiment |
 |-------|------------------|-----------|
@@ -135,17 +135,17 @@ The final CSV file contains:
 | Le Dîner de Cons | fr | Negative |
 | Torrente | sp | Negative |
 
-## 📚 Learning Outcomes
+## Learning Outcomes
 
 This project demonstrates proficiency in:
 
-- 🧠 **Natural Language Processing** - Translation, sentiment analysis
-- 🔧 **ML Pipeline Development** - Data preprocessing, model integration
-- 📊 **Data Manipulation** - Pandas operations, multi-source data handling
-- 🤖 **Transfer Learning** - Leveraging pre-trained models
-- 📝 **Best Practices** - Clean code, documentation, reproducibility
+- **Natural Language Processing** - Translation, sentiment analysis
+- **ML Pipeline Development** - Data preprocessing, model integration
+- **Data Manipulation** - Pandas operations, multi-source data handling
+- **Transfer Learning** - Leveraging pre-trained models
+- **Best Practices** - Clean code, documentation, reproducibility
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -166,20 +166,20 @@ model.to(device)
 - Models download ~650MB on first execution
 - Subsequent runs use cached models (much faster)
 
-## 📊 Performance Metrics
+## Performance Metrics
 
 - **Translation Speed**: ~1-2 seconds per text
 - **Total Processing Time**: ~2-3 minutes for 30 movies
 - **Model Downloads**: ~650MB (first run only)
 - **Accuracy**: Leverages state-of-the-art pre-trained models
 
-## 👤 Author
+## Author
 
 **Tyler Wolfe**
 - GitHub: [@WolfeTyler](https://github.com/WolfeTyler)
 - LinkedIn: [Tyler Wolfe](https://www.linkedin.com/in/tyler-wolfe/)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [HuggingFace](https://huggingface.co/) for providing pre-trained models
 - [Helsinki-NLP](https://github.com/Helsinki-NLP) for MarianMT translation models
